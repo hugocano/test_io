@@ -9,6 +9,9 @@
       socket.on('time', function(timeString) {
         el.innerHTML = 'Server time: ' + timeString;
       });
+      socket.on('time2', function(data) {
+        console.log('data',data);
+      });
     </script>
   </body>
 </html>
